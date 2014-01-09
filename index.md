@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Dharma-n.io
+tagline: We create some new shit.
 ---
 {% include JB/setup %}
 
