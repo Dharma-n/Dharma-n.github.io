@@ -11,10 +11,10 @@ pygments: true
 title : Dharma-n.io
 tagline: Site Tagline
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
+  name : Frank Yao
+  email : info@blah.com
+  github : dharma-n
+  twitter : dharma-n
   feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
