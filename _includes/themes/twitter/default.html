@@ -17,6 +17,8 @@
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -38,10 +40,18 @@
         <div class="container">
           <img src="/assets/images/logo/40x40.png" class="pull-left">
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
+          <ul class="nav pull-right">
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
+            <li class="dropdown" id="preview-menu">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">English <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a target="_blank" href="bootstrap.min.css">日本語</a></li>
+                <li><a target="_blank" href="bootstrap.css">简体中文</a></li>
+                <li><a target="_blank" href="bootswatch.less">English</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
