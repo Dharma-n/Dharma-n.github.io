@@ -1,40 +1,34 @@
-# Jekyll-Bootstrap
+# Middleman Twitter Bootstrap
 
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
+
+## What is it?
+
+Middleman Twitter Bootstrap is my clean project starting point for the [Middleman](http://middlemanapp.com/) static site generator. 
+
+It sets up <kbd>middleman</kbd> for blogging and pulls in the [twitter-bootstrap](http://twitter.github.com/bootstrap/) framework. It also sets up code highlighting using
+[highlight.js](http://softwaremaniacs.org/soft/highlight/en/).
+
+And that's all it does.
+
+This project draws heavily from Ayumi Fujii's [middleman-bootstrap](https://github.com/fujimogn/middleman-bootstrap), delivering a simpler setup that is based on 
+<kbd>haml</kbd> instead of <kbd>slim</kbd> and without using [Font Awesome.](http://fortawesome.github.com/Font-Awesome/) 
+Also see Nathan Henderson's [middleman-bootstrap](https://github.com/nathos/middleman-bootstrap) for a starting point that uses other grid systems and HTML5 Boilerplate.
 
 ## Usage
 
-For all usage and documentation please see: <http://jekyllbootstrap.com>
+_Quick setup:_ Assuming you have Ruby setup, download this project, then <kdb>bundle install</kbd> and then <kbd>bundle exec middleman</kbd>. Now visit <kbd>http://localhost:4567</kbd>
 
-## Version
-
-0.3.0 - stable and versioned using [semantic versioning](http://semver.org/).
-
-**NOTE:** 0.3.0 introduces a new theme which is not backwards compatible in the sense it won't _look_ like the old version.
-However, the actual API has not changed at all.
-You might want to run 0.3.0 in a branch to make sure you are ok with the theme design changes.
-
-## Contributing
-
-
-To contribute to the framework please make sure to checkout your branch based on `jb-development`!!
-This is very important as it allows me to accept your pull request without having to publish a public version release.
-
-Small, atomic Features, bugs, etc.
-Use the `jb-development` branch but note it will likely change fast as pull requests are accepted.
-Please rebase as often as possible when working.
-Work on small, atomic features/bugs to avoid upstream commits affecting/breaking your development work.
-
-For Big Features or major API extensions/edits:
-This is the one case where I'll accept pull-requests based off the master branch.
-This allows you to work in isolation but it means I'll have to manually merge your work into the next public release.
-Translation : it might take a bit longer so please be patient! (but sincerely thank you).
-
-**Jekyll-Bootstrap Documentation Website.**
-
-The documentation website at <http://jekyllbootstrap.com> is maintained at https://github.com/plusjade/jekyllbootstrap.com
-
+Check Middleman's [documentation](https://github.com/middleman/middleman) for details. 
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT)
+* Twitter Bootstrap: Apache License v2.0
+* Middleman: Copyright (c) 2010 Thomas Reynolds. MIT Licensed
+* jQuery: MIT/GPL license
+* highlight.js: Copyright (c) 2006, Ivan Sagalaev
+
+Similarly, refer to each component for its license.
+
+Everything else:
+
+* [The Unlicense](http://unlicense.org/) (aka: public domain)
