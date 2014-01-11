@@ -33,24 +33,19 @@
 <i class='icon-pencil'></i>
 </a>
 </li>
-<li>
-<a href='https://github.com/Dharma-n'>
-<i class='icon-book'></i>
-</a>
-</li>
 <li class='dropdown' id='preview-menu'>
 <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
 <i class='icon-globe'></i>
 </a>
 <ul class='dropdown-menu'>
 <li>
-<a href='/ja/2012-01-01-example-art.html'>> 日本語</a>
+<a href='/ja/2014-01-11-we-are-finally-here.html'>> 日本語</a>
 </li>
 <li>
-<a href='/cn/2012-01-01-example-art.html'>> 简体中文</a>
+<a href='/cn/2014-01-11-we-are-finally-here.html'>> 简体中文</a>
 </li>
 <li>
-<a href='/2012-01-01-example-art.html'>> English</a>
+<a href='/2014-01-11-we-are-finally-here.html'>> English</a>
 </li>
 </ul>
 </li>
@@ -59,12 +54,39 @@
 </div>
 </div>
 <h1></h1>
-<h1>日本語</h1>
+<h1>We are finally here</h1>
 <hr>
-<article><p>日本語の文章</p>
+<article><h4 id="intro">Intro</h4>
+<p>After almost a month, our team finally get to release our first version of <a href="http://senkyoyarou.com">Senkyoyarou.com</a>, of which the meaning in Japanese Language is <strong>“Let’s go voting”</strong>. Me and Mr. N both has more than 5 years of web developing experience, with multipule languages and frameworks like <strong>Django</strong>, <strong>Rails</strong>, etc. And this time we wanted something different.</p>
+
+<h4 id="what">What</h4>
+<p>The website, <a href="http://senkyoyarou.com">Senkyoyarou.com</a> aims to expand the awareness of Japanese people ( Or people of anyother democracy country ) on voting, by showing support rate of particular senator or political issue <strong>real time</strong>, making it more efficient for people to catch the current situation.</p>
+
+<h4 id="the-system">The system</h4>
+<p>To handle the heavy traffic and the need of realtime websocket processing, we found the currently popular nodejs handy to our needs, with a few obvious flaws:</p>
+
+<ul>
+  <li>Readability of Javascript Code is just horriable</li>
+  <li>Callback Hell</li>
+  <li>Memory Leaking issue sometimes happen		</li>
+</ul>
+
+<p>and it’s obvious merits:</p>
+
+<ul>
+  <li>Javascript on both ends makes it faster to develop</li>
+  <li>Rich resource to explore on npm</li>
+  <li>Native support of websocket</li>
+  <li>Native Async processing of request</li>
+  <li>Easy to port to mobile with the same code base</li>
+</ul>
+
+<h4 id="dharma">Dharma</h4>
+
+<p>Dharma is what we made, with <a href="http://backbonejs.org">backbone.js</a> and <a href="http://underscorejs.org">underscore.js</a> to handle <a href="http://en.wikipedia.org/wiki/Stateless_protocol">stateless</a> front-end, with user login, click events, modules and so on. It will ease people’s way of creating <a href="http://en.wikipedia.org/wiki/Stateless_protocol">stateless</a> websites. It is also very light, so that it’ll also be handy while creating <strong>mobile applications</strong>.</p>
 </article>
 <hr>
-<h4>Jan  1 , 2012</h4>
+<h4>Jan 11 , 2014</h4>
 
 <footer>
 <p>&copy; 2011-2014 Dharma-n.io</p>

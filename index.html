@@ -3,7 +3,7 @@
 <head>
 <meta charset='utf-8'>
 <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
-<title>dharma-n</title>
+<title></title>
 <meta content='' name='description'>
 <meta content='' name='author'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport'>
@@ -33,11 +33,6 @@
 <i class='icon-pencil'></i>
 </a>
 </li>
-<li>
-<a href='https://github.com/Dharma-n'>
-<i class='icon-book'></i>
-</a>
-</li>
 <li class='dropdown' id='preview-menu'>
 <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
 <i class='icon-globe'></i>
@@ -58,16 +53,55 @@
 </div>
 </div>
 </div>
-<h1>dharma-n</h1>
-<div class='hero-unit'>
-npm install dharma-n
+<h1></h1>
+<h1>
+<span>dharma</span>
+<span class='c-gray'>stateless micro framework</span>
+</h1>
+<span class='label label-info b-sharp'>
+<i class='icon-book icon-white'></i>
+docs
+</span>
+<span class='label label-success b-sharp'>
+<i class='icon-tint icon-white'></i>
+source
+</span>
+<div class='hero-unit b-sharp'>
+<span>npm install dharma</span>
 </div>
 <h1>Blog</h1>
 <hr>
-<h3>Example Article</h3>
-<p>This is an example article. You probably want to delete it and write your own articles!</p>
+<h3>We are finally here</h3>
+<h4 id="intro">Intro</h4>
+<p>After almost a month, our team finally get to release our first version of <a href="http://senkyoyarou.com">Senkyoyarou.com</a>, of which the meaning in Japanese Language is <strong>“Let’s go voting”</strong>. Me and Mr. N both has more than 5 years of web developing experience, with multipule languages and frameworks like <strong>Django</strong>, <strong>Rails</strong>, etc. And this time we wanted something different.</p>
 
-<b>January 01 2012</b>
+<h4 id="what">What</h4>
+<p>The website, <a href="http://senkyoyarou.com">Senkyoyarou.com</a> aims to expand the awareness of Japanese people ( Or people of anyother democracy country ) on voting, by showing support rate of particular senator or political issue <strong>real time</strong>, making it more efficient for people to catch the current situation.</p>
+
+<h4 id="the-system">The system</h4>
+<p>To handle the heavy traffic and the need of realtime websocket processing, we found the currently popular nodejs handy to our needs, with a few obvious flaws:</p>
+
+<ul>
+  <li>Readability of Javascript Code is just horriable</li>
+  <li>Callback Hell</li>
+  <li>Memory Leaking issue sometimes happen		</li>
+</ul>
+
+<p>and it’s obvious merits:</p>
+
+<ul>
+  <li>Javascript on both ends makes it faster to develop</li>
+  <li>Rich resource to explore on npm</li>
+  <li>Native support of websocket</li>
+  <li>Native Async processing of request</li>
+  <li>Easy to port to mobile with the same code base</li>
+</ul>
+
+<h4 id="dharma">Dharma</h4>
+
+<p>Dharma is what we made, with <a href="http://backbonejs.org">backbone.js</a> and <a href="http://underscorejs.org">underscore.js</a> to handle <a href="http://en.wikipedia.org/wiki/Stateless_protocol">stateless</a> front-end, with user login, click events, modules and so on. It will ease people’s way of creating <a href="http://en.wikipedia.org/wiki/Stateless_protocol">stateless</a> websites. It is also very light, so that it’ll also be handy while creating <strong>mobile applications</strong>.</p>
+
+<b>January 11 2014</b>
 <hr>
 
 <footer>

@@ -33,11 +33,6 @@
 <i class='icon-pencil'></i>
 </a>
 </li>
-<li>
-<a href='https://github.com/Dharma-n'>
-<i class='icon-book'></i>
-</a>
-</li>
 <li class='dropdown' id='preview-menu'>
 <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
 <i class='icon-globe'></i>
@@ -66,50 +61,133 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2012-01-01T00:00:00Z</updated>
+  <updated>2014-01-11T00:46:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
   <entry>
-    <title>日本語</title>
-    <link rel="alternate" href="/ja/2012/01/01/example-art.html"/>
-    <id>/ja/2012/01/01/example-art.html</id>
-    <published>2012-01-01T00:00:00Z</published>
-    <updated>2012-01-01T00:00:00Z</updated>
+    <title>We are finally here</title>
+    <link rel="alternate" href="/ja/2014/01/11/we-are-finally-here.html"/>
+    <id>/ja/2014/01/11/we-are-finally-here.html</id>
+    <published>2014-01-11T00:46:00Z</published>
+    <updated>2014-01-11T00:46:00Z</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <summary type="html">&lt;p&gt;日本語の文章&lt;/p&gt;
-</summary>
-    <content type="html">&lt;p&gt;日本語の文章&lt;/p&gt;
+    <summary type="html">&lt;h4 id="intro"&gt;Intro&lt;/h4&gt;
+&lt;p&gt;After almost a month, our team finally get to release our first version of &lt;a href="http://senkyoyarou.com"&gt;Senkyoyarou.com&lt;/a&gt;, of which the meaning in Japanese Language is &lt;strong&gt;“Let’s go voting”&lt;/strong&gt;. Me and Mr. N both has more than 5 years of web developing experience, with multipule languages...&lt;/p&gt;</summary>
+    <content type="html">&lt;h4 id="intro"&gt;Intro&lt;/h4&gt;
+&lt;p&gt;After almost a month, our team finally get to release our first version of &lt;a href="http://senkyoyarou.com"&gt;Senkyoyarou.com&lt;/a&gt;, of which the meaning in Japanese Language is &lt;strong&gt;“Let’s go voting”&lt;/strong&gt;. Me and Mr. N both has more than 5 years of web developing experience, with multipule languages and frameworks like &lt;strong&gt;Django&lt;/strong&gt;, &lt;strong&gt;Rails&lt;/strong&gt;, etc. And this time we wanted something different.&lt;/p&gt;
+
+&lt;h4 id="what"&gt;What&lt;/h4&gt;
+&lt;p&gt;The website, &lt;a href="http://senkyoyarou.com"&gt;Senkyoyarou.com&lt;/a&gt; aims to expand the awareness of Japanese people ( Or people of anyother democracy country ) on voting, by showing support rate of particular senator or political issue &lt;strong&gt;real time&lt;/strong&gt;, making it more efficient for people to catch the current situation.&lt;/p&gt;
+
+&lt;h4 id="the-system"&gt;The system&lt;/h4&gt;
+&lt;p&gt;To handle the heavy traffic and the need of realtime websocket processing, we found the currently popular nodejs handy to our needs, with a few obvious flaws:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Readability of Javascript Code is just horriable&lt;/li&gt;
+  &lt;li&gt;Callback Hell&lt;/li&gt;
+  &lt;li&gt;Memory Leaking issue sometimes happen		&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and it’s obvious merits:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Javascript on both ends makes it faster to develop&lt;/li&gt;
+  &lt;li&gt;Rich resource to explore on npm&lt;/li&gt;
+  &lt;li&gt;Native support of websocket&lt;/li&gt;
+  &lt;li&gt;Native Async processing of request&lt;/li&gt;
+  &lt;li&gt;Easy to port to mobile with the same code base&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="dharma"&gt;Dharma&lt;/h4&gt;
+
+&lt;p&gt;Dharma is what we made, with &lt;a href="http://backbonejs.org"&gt;backbone.js&lt;/a&gt; and &lt;a href="http://underscorejs.org"&gt;underscore.js&lt;/a&gt; to handle &lt;a href="http://en.wikipedia.org/wiki/Stateless_protocol"&gt;stateless&lt;/a&gt; front-end, with user login, click events, modules and so on. It will ease people’s way of creating &lt;a href="http://en.wikipedia.org/wiki/Stateless_protocol"&gt;stateless&lt;/a&gt; websites. It is also very light, so that it’ll also be handy while creating &lt;strong&gt;mobile applications&lt;/strong&gt;.&lt;/p&gt;
 </content>
   </entry>
   <entry>
-    <title>Example Article</title>
-    <link rel="alternate" href="/en/2012/01/01/example-art.html"/>
-    <id>/en/2012/01/01/example-art.html</id>
-    <published>2012-01-01T00:00:00Z</published>
-    <updated>2012-01-01T00:00:00Z</updated>
+    <title>你好，Github</title>
+    <link rel="alternate" href="/cn/2014/01/11/we-are-finally-here.html"/>
+    <id>/cn/2014/01/11/we-are-finally-here.html</id>
+    <published>2014-01-11T00:45:00Z</published>
+    <updated>2014-01-11T00:45:00Z</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <summary type="html">&lt;p&gt;This is an example article. You probably want to delete it and write your own articles!&lt;/p&gt;
-</summary>
-    <content type="html">&lt;p&gt;This is an example article. You probably want to delete it and write your own articles!&lt;/p&gt;
+    <summary type="html">&lt;h4 id="section"&gt;起&lt;/h4&gt;
+&lt;p&gt;在将近一个月的努力之后，我们终于释出了&lt;a href="http://senkyoyarou.com"&gt;Senkyoyarou.com&lt;/a&gt;的第一个版本。&lt;strong&gt;“Senkyoyarou”&lt;/strong&gt;, 在日文中的含义是“大家一起参与选举吧！” (当然，还有一些其他意思，你懂的)。我和N先生大概都在这个IT业界呆了超过五年了，我们之前曾经接触过不少语言和框架，比如 &lt;strong&gt;Django&lt;/strong&gt;, &lt;strong&gt;Rails&lt;/strong&gt; 等等。但是，这次我们打算尝试一些新的东西。&lt;/p&gt;
+
+&lt;h4 id="section-1"&gt;这是啥&lt;/h4&gt;
+&lt;p&gt;一切都起源于上海的一个小酒吧里，在大约午夜11点半的时候，我和N先生打了个赌，说如果谁输了的话，就把负责做这个网站的前端( 不过事后...&lt;/p&gt;</summary>
+    <content type="html">&lt;h4 id="section"&gt;起&lt;/h4&gt;
+&lt;p&gt;在将近一个月的努力之后，我们终于释出了&lt;a href="http://senkyoyarou.com"&gt;Senkyoyarou.com&lt;/a&gt;的第一个版本。&lt;strong&gt;“Senkyoyarou”&lt;/strong&gt;, 在日文中的含义是“大家一起参与选举吧！” (当然，还有一些其他意思，你懂的)。我和N先生大概都在这个IT业界呆了超过五年了，我们之前曾经接触过不少语言和框架，比如 &lt;strong&gt;Django&lt;/strong&gt;, &lt;strong&gt;Rails&lt;/strong&gt; 等等。但是，这次我们打算尝试一些新的东西。&lt;/p&gt;
+
+&lt;h4 id="section-1"&gt;这是啥&lt;/h4&gt;
+&lt;p&gt;一切都起源于上海的一个小酒吧里，在大约午夜11点半的时候，我和N先生打了个赌，说如果谁输了的话，就把负责做这个网站的前端( 不过事后发现前后端都不简单 )。这个网站的目的在于 通过 &lt;strong&gt;实时显示&lt;/strong&gt; 政治家以及政治事件的支持率的方式 &lt;strong&gt;唤醒&lt;/strong&gt; 日本人民 (或者其它任何民主国家之人民)的选举意识。我们相信，通过互联网，人们对于政治家的认知度将有一个很大的提升。&lt;/p&gt;
+
+&lt;h4 id="section-2"&gt;系统&lt;/h4&gt;
+&lt;p&gt;为了处理可能会到来的流量和实时的Web Socket接口，我们发现正在流行的NodeJS可能会对我们有一些帮助，不过使用NodeJS带来的问题也是很明显的:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;代码的可读性相当糟糕&lt;/li&gt;
+  &lt;li&gt;回调函数地狱&lt;/li&gt;
+  &lt;li&gt;在Javascript的世界里，内存泄露是时常发生的&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;当然，NodeJS也有其好处:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;使用Javascript在前后端开发都相当的迅捷&lt;/li&gt;
+  &lt;li&gt;在NPM上有大量资源可以使用&lt;/li&gt;
+  &lt;li&gt;直接支持Websocket&lt;/li&gt;
+  &lt;li&gt;直接的异步数据请求处理&lt;/li&gt;
+  &lt;li&gt;可移植性很高&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="section-3"&gt;达摩&lt;/h4&gt;
+&lt;p&gt;那么，达摩就是我们用&lt;a href="http://backbonejs.org"&gt;backbone.js&lt;/a&gt; 和 &lt;a href="http://underscorejs.org"&gt;underscore.js&lt;/a&gt;，搭建出来，用于处理纯API，&lt;a href="http://zh.wikipedia.org/wiki/%E6%97%A0%E7%8A%B6%E6%80%81%E5%8D%8F%E8%AE%AE"&gt;无状态&lt;/a&gt;式的网站架构的一个微型框架。这个框架非常小，所以我们认为在手机应用的开发上也应该相当好用。&lt;/p&gt;
 </content>
   </entry>
   <entry>
-    <title>中文文章</title>
-    <link rel="alternate" href="/cn/2012/01/01/example-art.html"/>
-    <id>/cn/2012/01/01/example-art.html</id>
-    <published>2012-01-01T00:00:00Z</published>
-    <updated>2012-01-01T00:00:00Z</updated>
+    <title>We are finally here</title>
+    <link rel="alternate" href="/en/2014/01/11/we-are-finally-here.html"/>
+    <id>/en/2014/01/11/we-are-finally-here.html</id>
+    <published>2014-01-11T00:04:00Z</published>
+    <updated>2014-01-11T00:04:00Z</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <summary type="html">&lt;p&gt;这是一篇中文文章&lt;/p&gt;
-</summary>
-    <content type="html">&lt;p&gt;这是一篇中文文章&lt;/p&gt;
+    <summary type="html">&lt;h4 id="intro"&gt;Intro&lt;/h4&gt;
+&lt;p&gt;After almost a month, our team finally get to release our first version of &lt;a href="http://senkyoyarou.com"&gt;Senkyoyarou.com&lt;/a&gt;, of which the meaning in Japanese Language is &lt;strong&gt;“Let’s go voting”&lt;/strong&gt;. Me and Mr. N both has more than 5 years of web developing experience, with multipule languages...&lt;/p&gt;</summary>
+    <content type="html">&lt;h4 id="intro"&gt;Intro&lt;/h4&gt;
+&lt;p&gt;After almost a month, our team finally get to release our first version of &lt;a href="http://senkyoyarou.com"&gt;Senkyoyarou.com&lt;/a&gt;, of which the meaning in Japanese Language is &lt;strong&gt;“Let’s go voting”&lt;/strong&gt;. Me and Mr. N both has more than 5 years of web developing experience, with multipule languages and frameworks like &lt;strong&gt;Django&lt;/strong&gt;, &lt;strong&gt;Rails&lt;/strong&gt;, etc. And this time we wanted something different.&lt;/p&gt;
+
+&lt;h4 id="what"&gt;What&lt;/h4&gt;
+&lt;p&gt;The website, &lt;a href="http://senkyoyarou.com"&gt;Senkyoyarou.com&lt;/a&gt; aims to expand the awareness of Japanese people ( Or people of anyother democracy country ) on voting, by showing support rate of particular senator or political issue &lt;strong&gt;real time&lt;/strong&gt;, making it more efficient for people to catch the current situation.&lt;/p&gt;
+
+&lt;h4 id="the-system"&gt;The system&lt;/h4&gt;
+&lt;p&gt;To handle the heavy traffic and the need of realtime websocket processing, we found the currently popular nodejs handy to our needs, with a few obvious flaws:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Readability of Javascript Code is just horriable&lt;/li&gt;
+  &lt;li&gt;Callback Hell&lt;/li&gt;
+  &lt;li&gt;Memory Leaking issue sometimes happen		&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and it’s obvious merits:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Javascript on both ends makes it faster to develop&lt;/li&gt;
+  &lt;li&gt;Rich resource to explore on npm&lt;/li&gt;
+  &lt;li&gt;Native support of websocket&lt;/li&gt;
+  &lt;li&gt;Native Async processing of request&lt;/li&gt;
+  &lt;li&gt;Easy to port to mobile with the same code base&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="dharma"&gt;Dharma&lt;/h4&gt;
+
+&lt;p&gt;Dharma is what we made, with &lt;a href="http://backbonejs.org"&gt;backbone.js&lt;/a&gt; and &lt;a href="http://underscorejs.org"&gt;underscore.js&lt;/a&gt; to handle &lt;a href="http://en.wikipedia.org/wiki/Stateless_protocol"&gt;stateless&lt;/a&gt; front-end, with user login, click events, modules and so on. It will ease people’s way of creating &lt;a href="http://en.wikipedia.org/wiki/Stateless_protocol"&gt;stateless&lt;/a&gt; websites. It is also very light, so that it’ll also be handy while creating &lt;strong&gt;mobile applications&lt;/strong&gt;.&lt;/p&gt;
 </content>
   </entry>
 </feed>
