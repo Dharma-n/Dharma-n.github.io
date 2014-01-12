@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='#{I18n.locale}'></html>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title></title>
+<meta content='' name='description'>
+<meta content='' name='author'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<link href="/stylesheets/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/custom.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class='container'>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<img class='pull-left' src='/img/logo/40x40.png'>
+<a class='brand' href='/'>dharma-n.io</a>
+<ul class='nav pull-right'>
+<li>
+<a href='/'>
+<i class='icon-home'></i>
+</a>
+</li>
+<li>
+<a href='/blogs.html'>
+<i class='icon-pencil'></i>
+</a>
+</li>
+<li class='dropdown' id='preview-menu'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+<i class='icon-globe'></i>
+</a>
+<ul class='dropdown-menu'>
+<li>
+<a href='/ja/2014-01-11-we-are-finally-here.html'>> 日本語</a>
+</li>
+<li>
+<a href='/cn/2014-01-11-we-are-finally-here.html'>> 简体中文</a>
+</li>
+<li>
+<a href='/2014-01-11-we-are-finally-here.html'>> English</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<h1></h1>
+<h1>We are finally here</h1>
+<hr>
+<article><h4 id="intro">Intro</h4>
+<p>After almost a month, our team finally get to release our first version of <a href="http://senkyoyarou.com">Senkyoyarou.com</a>, of which the meaning in Japanese Language is <strong>“Let’s go voting”</strong>. Me and Mr. N both has more than 5 years of web developing experience, with multipule languages and frameworks like <strong>Django</strong>, <strong>Rails</strong>, etc. And this time we wanted something different.</p>
+
+<h4 id="what">What</h4>
+<p>The website, <a href="http://senkyoyarou.com">Senkyoyarou.com</a> aims to expand the awareness of Japanese people ( Or people of anyother democracy country ) on voting, by showing support rate of particular senator or political issue <strong>real time</strong>, making it more efficient for people to catch the current situation.</p>
+
+<h4 id="the-system">The system</h4>
+<p>To handle the heavy traffic and the need of realtime websocket processing, we found the currently popular nodejs handy to our needs, with a few obvious flaws:</p>
+
+<ul>
+  <li>Readability of Javascript Code is just horriable</li>
+  <li>Callback Hell</li>
+  <li>Memory Leaking issue sometimes happen		</li>
+</ul>
+
+<p>and it’s obvious merits:</p>
+
+<ul>
+  <li>Javascript on both ends makes it faster to develop</li>
+  <li>Rich resource to explore on npm</li>
+  <li>Native support of websocket</li>
+  <li>Native Async processing of request</li>
+  <li>Easy to port to mobile with the same code base</li>
+</ul>
+
+<h4 id="dharma">Dharma</h4>
+
+<p>Dharma is what we made, with <a href="http://backbonejs.org">backbone.js</a> and <a href="http://underscorejs.org">underscore.js</a> to handle <a href="http://en.wikipedia.org/wiki/Stateless_protocol">stateless</a> front-end, with user login, click events, modules and so on. It will ease people’s way of creating <a href="http://en.wikipedia.org/wiki/Stateless_protocol">stateless</a> websites. It is also very light, so that it’ll also be handy while creating <strong>mobile applications</strong>.</p>
+</article>
+<hr>
+<h4>Jan 11 , 2014</h4>
+
+<footer>
+<p>&copy; 2011-2014 Dharma-n.io</p>
+</footer>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script>
+  //<![CDATA[
+    window.jQuery || document.write('<script src="/javascripts/libs/jquery-1.8.3.min.js"><\/script>')
+  //]]>
+</script>
+<script src="/javascripts/plugins.js" type="text/javascript"></script>
+<script src="/javascripts/script.js" type="text/javascript"></script>
+<script src="/javascripts/bootstrap.js" type="text/javascript"></script>
+<script src="/javascripts/highlight.pack.js" type="text/javascript"></script>
+<link href="/stylesheets/solarized_light.css" media="screen" rel="stylesheet" type="text/css" />
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- :javascript -->
+<!-- var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; -->
+<!-- (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0]; -->
+<!-- g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js'; -->
+<!-- s.parentNode.insertBefore(g,s)}(document,'script')); -->
+</body>
+

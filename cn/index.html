@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang='#{I18n.locale}'></html>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title></title>
+<meta content='' name='description'>
+<meta content='' name='author'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<link href="/stylesheets/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/custom.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class='container'>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<img class='pull-left' src='/img/logo/40x40.png'>
+<a class='brand' href='/cn'>dharma-n.io</a>
+<ul class='nav pull-right'>
+<li>
+<a href='/cn'>
+<i class='icon-home'></i>
+</a>
+</li>
+<li>
+<a href='/cn/blogs.html'>
+<i class='icon-pencil'></i>
+</a>
+</li>
+<li class='dropdown' id='preview-menu'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+<i class='icon-globe'></i>
+</a>
+<ul class='dropdown-menu'>
+<li>
+<a href='/ja/index.html'>> 日本語</a>
+</li>
+<li>
+<a href='/cn/index.html'>> 简体中文</a>
+</li>
+<li>
+<a href='/index.html'>> English</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<h1></h1>
+<h1>
+<span>达摩</span>
+<span class='c-gray'>无状态前端框架</span>
+</h1>
+<h1>博客</h1>
+<hr>
+<div class='row'>
+<div class='span8'>
+<h3>你好，Github</h3>
+<h4 id="section">起</h4>
+<p>在将近一个月的努力之后，我们终于释出了<a href="http://senkyoyarou.com">Senkyoyarou.com</a>的第一个版本。<strong>“Senkyoyarou”</strong>, 在日文中的含义是“大家一起参与选举吧！” (当然，还有一些其他意思，你懂的)。我和N先生大概都在这个IT业界呆了超过五年了，我们之前曾经接触过不少语言和框架，比如 <strong>Django</strong>, <strong>Rails</strong> 等等。但是，这次我们打算尝试一些新的东西。</p>
+
+<h4 id="section-1">这是啥</h4>
+<p>一切都起源于上海的一个小酒吧里，在大约午夜11点半的时候，我和N先生打了个赌，说如果谁输了的话，就把负责做这个网站的前端( 不过事后发现前后端都不简单 )。这个网站的目的在于 通过 <strong>实时显示</strong> 政治家以及政治事件的支持率的方式 <strong>唤醒</strong> 日本人民 (或者其它任何民主国家之人民)的选举意识。我们相信，通过互联网，人们对于政治家的认知度将有一个很大的提升。</p>
+
+<h4 id="section-2">系统</h4>
+<p>为了处理可能会到来的流量和实时的Web Socket接口，我们发现正在流行的NodeJS可能会对我们有一些帮助，不过使用NodeJS带来的问题也是很明显的:</p>
+
+<ul>
+  <li>代码的可读性相当糟糕</li>
+  <li>回调函数地狱</li>
+  <li>在Javascript的世界里，内存泄露是时常发生的</li>
+</ul>
+
+<p>当然，NodeJS也有其好处:</p>
+
+<ul>
+  <li>使用Javascript在前后端开发都相当的迅捷</li>
+  <li>在NPM上有大量资源可以使用</li>
+  <li>直接支持Websocket</li>
+  <li>直接的异步数据请求处理</li>
+  <li>可移植性很高</li>
+</ul>
+
+<h4 id="section-3">达摩</h4>
+<p>那么，达摩就是我们用<a href="http://backbonejs.org">backbone.js</a> 和 <a href="http://underscorejs.org">underscore.js</a>，搭建出来，用于处理纯API，<a href="http://zh.wikipedia.org/wiki/%E6%97%A0%E7%8A%B6%E6%80%81%E5%8D%8F%E8%AE%AE">无状态</a>式的网站架构的一个微型框架。这个框架非常小，所以我们认为在手机应用的开发上也应该相当好用。</p>
+
+<b>January 11 2014</b>
+<hr>
+</div>
+<div class='span4'>
+<span class='label label-info'>
+<i class='icon-book icon-white'></i>
+文档
+</span>
+<span class='label label-success'>
+<i class='icon-eye-open icon-white'></i>
+代码
+</span>
+</div>
+</div>
+
+<footer>
+<p>&copy; 2011-2014 Dharma-n.io</p>
+</footer>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script>
+  //<![CDATA[
+    window.jQuery || document.write('<script src="/javascripts/libs/jquery-1.8.3.min.js"><\/script>')
+  //]]>
+</script>
+<script src="/javascripts/plugins.js" type="text/javascript"></script>
+<script src="/javascripts/script.js" type="text/javascript"></script>
+<script src="/javascripts/bootstrap.js" type="text/javascript"></script>
+<script src="/javascripts/highlight.pack.js" type="text/javascript"></script>
+<link href="/stylesheets/solarized_light.css" media="screen" rel="stylesheet" type="text/css" />
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- :javascript -->
+<!-- var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; -->
+<!-- (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0]; -->
+<!-- g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js'; -->
+<!-- s.parentNode.insertBefore(g,s)}(document,'script')); -->
+</body>
