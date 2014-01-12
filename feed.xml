@@ -61,10 +61,122 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2014-01-11T00:46:00Z</updated>
+  <updated>2014-01-12T00:41:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Middleman 教程</title>
+    <link rel="alternate" href="/cn/2014/01/12/middleman-tutorial.html"/>
+    <id>/cn/2014/01/12/middleman-tutorial.html</id>
+    <published>2014-01-12T00:41:00Z</published>
+    <updated>2014-01-12T00:41:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;h4 id="middleman"&gt;- 什么是Middleman&lt;/h4&gt;
+&lt;p&gt;Middleman 是一个用来生成静态页面的生成器，通过在本地渲染/source里面的内容，生成/build. &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Source
+    &lt;ul&gt;
+      &lt;li&gt;源代码，以及部分逻辑&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Build
+    &lt;ul&gt;
+      &lt;li&gt;静态html&lt;/li&gt;
+      &lt;li&gt;(/Build里面的内容永远不用修改)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="github-page"&gt;- Github Page&lt;/h4&gt;
+&lt;p&gt;Github支持hosting静态页面，并且显示在&amp;lt; xxxx &amp;gt;.github.io这个二级域名下。 &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;所以&lt;/strong&gt;, ...&lt;/p&gt;</summary>
+    <content type="html">&lt;h4 id="middleman"&gt;- 什么是Middleman&lt;/h4&gt;
+&lt;p&gt;Middleman 是一个用来生成静态页面的生成器，通过在本地渲染/source里面的内容，生成/build. &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Source
+    &lt;ul&gt;
+      &lt;li&gt;源代码，以及部分逻辑&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Build
+    &lt;ul&gt;
+      &lt;li&gt;静态html&lt;/li&gt;
+      &lt;li&gt;(/Build里面的内容永远不用修改)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="github-page"&gt;- Github Page&lt;/h4&gt;
+&lt;p&gt;Github支持hosting静态页面，并且显示在&amp;lt; xxxx &amp;gt;.github.io这个二级域名下。 &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;所以&lt;/strong&gt;, 用Middleman来生成github pages是一个非常好的选择。&lt;/p&gt;
+
+&lt;h4 id="middleman--github--jekyll-"&gt;- 为什么是Middleman 而不是 Github 官方推荐的 Jekyll ?&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Jekyll只支持单语言&lt;/li&gt;
+  &lt;li&gt;Jekyll的Blog Engine不可扩展&lt;/li&gt;
+  &lt;li&gt;Jekyll不支持HAML&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="github-blogging"&gt;- 设置Github Blogging的环境&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;安装bundler  &lt;code&gt;sudo gem install bundler&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;浏览到想要放置blog文件的文件夹&lt;/li&gt;
+  &lt;li&gt;从repo下载源代码 &lt;code&gt;git clone https://github.com/nekokami/teampage-source.git&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;下载完了之后会出现一个叫做”teampage-source”的文件夹, 如果想重命名：&lt;code&gt;mv teampage-source your-desired-name&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;进入源码文件夹 &lt;code&gt;cd your-desired-name&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;安装Gemfiles里面包含的dependency &lt;code&gt;sudo bundle install&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;创建build文件夹 &lt;code&gt;mkdir build&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;cd build&lt;/code&gt; &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git init&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git remote add https://github.com/nekokami/nekokami.github.io.git&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git pull origin master&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;cd ..&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;环境设置到此为止&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id="blogging"&gt;- 开始Blogging&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;在middleman源码的目录下 &lt;code&gt;middleman article "Your blog title" --lang cn&lt;/code&gt; 此处可以是cn, en或者是ja&lt;/li&gt;
+  &lt;li&gt;在source/cn下找到your-blog-title.html.markdown文件&lt;/li&gt;
+  &lt;li&gt;
+    &lt;pre&gt;&lt;code&gt;---
+title: Middleman 教程
+date: 2014-01-12 00:41 UTC
+lang: cn &amp;lt;-在这里加入一行表示语言
+tags:
+---
+
+####我是Title, 4号字
+
+从这里开始Blogging, 这里是blog的正文
+遵循Markdown标签的书写规则, 具体请参照
+[点我](http://wowubuntu.com/markdown/)
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;保存文件, 并且在middleman的源码目录下&lt;code&gt;middleman build&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;build通过了自后&lt;code&gt;cd build&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;提交修改 &lt;code&gt;git add .&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Commit &lt;code&gt;git commit -m "your message"&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;向Server Push &lt;code&gt;git push origin master&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;大功告成&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id="section"&gt;- 后记&lt;/h4&gt;
+
+&lt;p&gt;对于没有学过编程的人来说，这些步骤可能是比较复杂。但是就常规的Blogging Routing来说，其实一共只有8个Command. 下次，将介绍如何批量执行linux command. 另外&lt;a href="http://wowubuntu.com/markdown/"&gt;Markdown&lt;/a&gt; 是一个很常用的标签语言。&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>We are finally here</title>
     <link rel="alternate" href="/ja/2014/01/11/we-are-finally-here.html"/>
