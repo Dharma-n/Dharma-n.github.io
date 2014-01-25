@@ -62,77 +62,36 @@
 <hr>
 <div class='row'>
 <div class='span8'>
-<h3>Middleman 教程</h3>
-<h4 id="middleman">- 什么是Middleman</h4>
-<p>Middleman 是一个用来生成静态页面的生成器，通过在本地渲染/source里面的内容，生成/build. </p>
+<h3>你好，Github</h3>
+<h4 id="section">起</h4>
+<p>在将近一个月的努力之后，我们终于释出了<a href="http://senkyoyarou.com">Senkyoyarou.com</a>的第一个版本。<strong>“Senkyoyarou”</strong>, 在日文中的含义是“大家一起参与选举吧！” (当然，还有一些其他意思，你懂的)。我和N先生大概都在这个IT业界呆了超过五年了，我们之前曾经接触过不少语言和框架，比如 <strong>Django</strong>, <strong>Rails</strong> 等等。但是，这次我们打算尝试一些新的东西。</p>
+
+<h4 id="section-1">这是啥</h4>
+<p>一切都起源于上海的一个小酒吧里，在大约午夜11点半的时候，我和N先生打了个赌，说如果谁输了的话，就把负责做这个网站的前端( 不过事后发现前后端都不简单 )。这个网站的目的在于 通过 <strong>实时显示</strong> 政治家以及政治事件的支持率的方式 <strong>唤醒</strong> 日本人民 (或者其它任何民主国家之人民)的选举意识。我们相信，通过互联网，人们对于政治家的认知度将有一个很大的提升。</p>
+
+<h4 id="section-2">系统</h4>
+<p>为了处理可能会到来的流量和实时的Web Socket接口，我们发现正在流行的NodeJS可能会对我们有一些帮助，不过使用NodeJS带来的问题也是很明显的:</p>
 
 <ul>
-  <li>Source
-    <ul>
-      <li>源代码，以及部分逻辑</li>
-    </ul>
-  </li>
-  <li>Build
-    <ul>
-      <li>静态html</li>
-      <li>(/Build里面的内容永远不用修改)</li>
-    </ul>
-  </li>
+  <li>代码的可读性相当糟糕</li>
+  <li>回调函数地狱</li>
+  <li>在Javascript的世界里，内存泄露是时常发生的</li>
 </ul>
 
-<h4 id="github-page">- Github Page</h4>
-<p>Github支持hosting静态页面，并且显示在&lt; xxxx &gt;.github.io这个二级域名下。 </p>
-
-<p><strong>所以</strong>, 用Middleman来生成github pages是一个非常好的选择。</p>
-
-<h4 id="middleman--github--jekyll-">- 为什么是Middleman 而不是 Github 官方推荐的 Jekyll ?</h4>
+<p>当然，NodeJS也有其好处:</p>
 
 <ul>
-  <li>Jekyll只支持单语言</li>
-  <li>Jekyll的Blog Engine不可扩展</li>
-  <li>Jekyll不支持HAML</li>
+  <li>使用Javascript在前后端开发都相当的迅捷</li>
+  <li>在NPM上有大量资源可以使用</li>
+  <li>直接支持Websocket</li>
+  <li>直接的异步数据请求处理</li>
+  <li>可移植性很高</li>
 </ul>
 
-<h4 id="github-blogging">- 设置Github Blogging的环境</h4>
+<h4 id="section-3">达摩</h4>
+<p>那么，达摩就是我们用<a href="http://backbonejs.org">backbone.js</a> 和 <a href="http://underscorejs.org">underscore.js</a>，搭建出来，用于处理纯API，<a href="http://zh.wikipedia.org/wiki/%E6%97%A0%E7%8A%B6%E6%80%81%E5%8D%8F%E8%AE%AE">无状态</a>式的网站架构的一个微型框架。这个框架非常小，所以我们认为在手机应用的开发上也应该相当好用。</p>
 
-<ol>
-  <li>安装bundler  <code>sudo gem install bundler</code></li>
-  <li>浏览到想要放置blog文件的文件夹</li>
-  <li>从repo下载源代码 <code>git clone https://github.com/nekokami/teampage-source.git</code></li>
-  <li>下载完了之后会出现一个叫做”teampage-source”的文件夹, 如果想重命名：<code>mv teampage-source your-desired-name</code></li>
-  <li>进入源码文件夹 <code>cd your-desired-name</code></li>
-  <li>安装Gemfiles里面包含的dependency <code>sudo bundle install</code></li>
-  <li>创建build文件夹 <code>mkdir build</code></li>
-  <li><code>cd build</code> </li>
-  <li><code>git init</code></li>
-  <li><code>git remote add https://github.com/nekokami/nekokami.github.io.git</code></li>
-  <li><code>git pull origin master</code></li>
-  <li><code>cd ..</code></li>
-</ol>
-
-<p><strong>环境设置到此为止</strong></p>
-
-<h4 id="blogging">- 开始Blogging</h4>
-
-<ol>
-  <li>在middleman源码的目录下 <code>middleman article "Your blog title" --lang cn</code> 此处可以是cn, en或者是ja</li>
-  <li>在source/cn下找到your-blog-title.html.markdown文件</li>
-  <li>
-    <pre><code>---&#x000A;title: Middleman 教程&#x000A;date: 2014-01-12 00:41 UTC&#x000A;lang: cn &lt;-在这里加入一行表示语言&#x000A;tags:&#x000A;---&#x000A;&#x000A;####我是Title, 4号字&#x000A;&#x000A;从这里开始Blogging, 这里是blog的正文&#x000A;遵循Markdown标签的书写规则, 具体请参照&#x000A;[点我](http://wowubuntu.com/markdown/)&#x000A;</code></pre>
-  </li>
-  <li>保存文件, 并且在middleman的源码目录下<code>middleman build</code></li>
-  <li>build通过了自后<code>cd build</code></li>
-  <li>提交修改 <code>git add .</code></li>
-  <li>Commit <code>git commit -m "your message"</code></li>
-  <li>向Server Push <code>git push origin master</code></li>
-  <li><strong>大功告成</strong></li>
-</ol>
-
-<h4 id="section">- 后记</h4>
-
-<p>对于没有学过编程的人来说，这些步骤可能是比较复杂。但是就常规的Blogging Routing来说，其实一共只有8个Command. 下次，将介绍如何批量执行linux command. 另外<a href="http://wowubuntu.com/markdown/">Markdown</a> 是一个很常用的标签语言。</p>
-
-<b>January 12 2014</b>
+<b>January 11 2014</b>
 <hr>
 </div>
 <div class='span4'>

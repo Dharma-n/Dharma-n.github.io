@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Gafata);
 body{ padding-top: 60px; }
 .min-h-150{ min-height: 150px; }
 .c-gray { color:gray; }
@@ -9,5 +8,3 @@ body{ padding-top: 60px; }
 	border-radius: 0px;
 }
 li.no-point { list-style-type: none; }
-h1,h2,h3,h4,h5{ font-family: 'Gafata',  "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
-body { font-family: 'Gafata',"Hiragino Sans GB", "Microsoft YaHei", sans-serif;}
