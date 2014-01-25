@@ -61,10 +61,37 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2014-01-11T00:46:00Z</updated>
+  <updated>2014-01-25T11:43:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Bits on Cyborgs (1)</title>
+    <link rel="alternate" href="/en/2014/01/25/bits-on-cyborgs.html"/>
+    <id>/en/2014/01/25/bits-on-cyborgs.html</id>
+    <published>2014-01-25T11:43:00Z</published>
+    <updated>2014-01-25T11:43:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;h4 id="defining-cyborgs"&gt;Defining Cyborgs&lt;/h4&gt;
+
+&lt;p&gt;Broadly, we are all cybrogs now. Into the second decade of the 21th century, advancement in technology brought us smart-phones, hand-held computers, watches, that all, can be viewed as our “External Organs”, storing our memories,...&lt;/p&gt;</summary>
+    <content type="html">&lt;h4 id="defining-cyborgs"&gt;Defining Cyborgs&lt;/h4&gt;
+
+&lt;p&gt;Broadly, we are all cybrogs now. Into the second decade of the 21th century, advancement in technology brought us smart-phones, hand-held computers, watches, that all, can be viewed as our “External Organs”, storing our memories, helping us make decisions and extending our thoughts. Yet, in the minds of the general public, cybrogs are simply “robots with human minds”, differing with the broad defination of “cyborg” elaborated above. The process of transition from “partial cyborg” to “complete cyborg” is quite interesting to study.&lt;/p&gt;
+
+&lt;h4 id="bottlenecks"&gt;Bottlenecks&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Power Source&lt;/strong&gt;
+To become “complete cyborgs”, a human being has to replace all of his carbon-based genetically inherited organs into mechanical artificial organs, of which the process is extremely difficult with the concurrent technology. Though, organs like limbs, hearts, eye-balls, teeth, and even kidneies can be replaced, path leading to the discovery of sustainable energy source to replace bio-chemical energy remains unseen. Some might argue that it is viable through fusion technology as is displayed in the popular science ficition “Iron Man” (Iron Man uses a technology called Cold Fusion to power all his external organs), safety and reliability of such power source remains doubtful.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Key Organs&lt;/strong&gt;
+Unlike the organs mentioned above, functionality of organs like our brain, liver, etc are still medically unveiled, blocking the way of creating artifical replacements of their own. Also, since research on certain organs are morally forbidden, it would be quite tidious waiting for legislation to allow such research.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;To be continued …&lt;/strong&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>We are finally here</title>
     <link rel="alternate" href="/ja/2014/01/11/we-are-finally-here.html"/>
